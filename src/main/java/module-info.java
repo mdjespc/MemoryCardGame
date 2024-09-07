@@ -4,5 +4,6 @@ module memorycardgame.memorycardgame {
 
 
     opens memorycardgame.memorycardgame to javafx.fxml;
+    opens memorycardgame.memorycardgame.controller to javafx.fxml;
     exports memorycardgame.memorycardgame;
 }

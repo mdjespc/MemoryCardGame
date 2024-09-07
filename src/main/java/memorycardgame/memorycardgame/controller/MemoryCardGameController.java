@@ -1,9 +1,8 @@
-package memorycardgame.memorycardgame;
-
+package memorycardgame.memorycardgame.controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class MemoryCardGameController {
     @FXML
     private Label welcomeText;
 
