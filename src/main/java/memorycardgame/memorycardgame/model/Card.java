@@ -30,7 +30,7 @@ public class Card {
         if (getValidRanks().contains(rank))
             this.rank = rank;
         else
-            throw new IllegalArgumentException(rank + " is an invalid suit. Must be one of " + getValidRanks());
+            throw new IllegalArgumentException(rank + " is an invalid rank. Must be one of " + getValidRanks());
     }
 
 

@@ -13,14 +13,13 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-
 <AnchorPane prefHeight="500.0" prefWidth="665.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="memorycardgame.memorycardgame.controller.MemoryCardGameController">
    <children>
       <VBox layoutX="227.0" layoutY="55.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <FlowPane alignment="CENTER" hgap="20.0" prefHeight="346.0" prefWidth="665.0" vgap="20.0">
                <children>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="SampleImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/Card_Back_Red.png" />
                      </image>
@@ -94,14 +93,14 @@
                               <Insets left="10.0" />
                            </GridPane.margin>
                         </Label>
-                        <Label text="0" GridPane.columnIndex="1" />
-                        <Label text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="guessesLabel" text="0" GridPane.columnIndex="1" />
+                        <Label fx:id="matchesLabel" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                      </children>
                      <padding>
                         <Insets left="20.0" />
                      </padding>
                   </GridPane>
-                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Play Again">
+                  <Button fx:id="resetButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#reset" text="Play Again">
                      <HBox.margin>
                         <Insets top="35.0" />
                      </HBox.margin>
